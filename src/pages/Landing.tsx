@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { BackgroundGrid } from '@/components/BackgroundGrid';
@@ -11,6 +10,7 @@ import { AboutSection } from '@/components/sections/AboutSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { Footer } from '@/components/sections/Footer';
+import ChatWidget from "../components/ChatWidget";
 
 const Landing = () => {
   const { restoreScrollPosition, saveScrollPosition } = useScrollPosition('landing');
@@ -37,6 +37,7 @@ const Landing = () => {
       <CTASection />
       <ContactSection />
       <Footer />
+      <ChatWidget />
     </div>
   );
 };
