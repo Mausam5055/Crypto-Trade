@@ -92,7 +92,7 @@ export const AboutSection = () => {
                   playsInline
                   className="w-full h-[400px] md:h-[500px] object-cover"
                 >
-                  <source src="/Crypto-Trade.mp4" type="video/mp4" />
+                  <source src="/Crypto-Trade-2.mp4" type="video/mp4" />
                   <img 
                     src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop&crop=center" 
                     alt="Advanced crypto trading interface"
