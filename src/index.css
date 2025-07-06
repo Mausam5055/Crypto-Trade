@@ -1,0 +1,385 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-background text-foreground antialiased;
+    overflow-x: hidden;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.glass-card {
+  @apply bg-secondary bg-opacity-20 backdrop-blur-lg border border-white border-opacity-10 shadow-lg;
+}
+
+.crypto-chart {
+  @apply h-[300px] w-full;
+}
+
+/* Hide all scrollbars globally */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Hide all scrollbars globally */
+* {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Hide horizontal and vertical scrollbars globally */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Continuous testimonial scrolling animation */
+@keyframes testimonial-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-testimonial-scroll {
+  animation: testimonial-scroll 30s linear infinite;
+  display: flex;
+}
+
+.animate-testimonial-scroll:hover {
+  animation-play-state: paused;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero text animation */
+@keyframes text-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-text-reveal {
+  animation: text-reveal 0.8s ease-out forwards;
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #8989DE, #7EBF8E, #D2886F, #8989DE);
+  background-size: 400% 400%;
+  animation: gradient-flow 15s ease infinite;
+}
+
+/* Enhanced glass effect */
+.glass-card {
+  @apply bg-secondary bg-opacity-10 backdrop-blur-xl border border-white border-opacity-10 shadow-2xl;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  @apply border-white border-opacity-20 shadow-2xl;
+  transform: translateY(-2px);
+}
+
+/* Navigation backdrop */
+.nav-backdrop {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Improved fade-in animation */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.animate-fade-in:nth-child(1) { animation-delay: 0.1s; }
+.animate-fade-in:nth-child(2) { animation-delay: 0.2s; }
+.animate-fade-in:nth-child(3) { animation-delay: 0.3s; }
+.animate-fade-in:nth-child(4) { animation-delay: 0.4s; }
+
+/* Enhanced navbar hover effects */
+.nav-expand {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-expand:hover {
+  transform: scaleX(1.1);
+  transform-origin: center;
+}
+
+/* Smooth image overlays */
+.image-overlay {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-overlay:hover {
+  opacity: 0.9;
+}
+
+/* Enhanced button animations */
+.btn-enhance {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-enhance:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Improved fade-in animation with stagger */
+@keyframes fade-in-stagger {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-stagger {
+  animation: fade-in-stagger 0.6s ease-out forwards;
+}
+
+.animate-fade-in-stagger:nth-child(1) { animation-delay: 0.1s; }
+.animate-fade-in-stagger:nth-child(2) { animation-delay: 0.2s; }
+.animate-fade-in-stagger:nth-child(3) { animation-delay: 0.3s; }
+.animate-fade-in-stagger:nth-child(4) { animation-delay: 0.4s; }
+
+/* Hero section enhancements */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(137, 137, 222, 0.1) 0%, rgba(126, 191, 142, 0.1) 100%);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced glass card effects */
+.glass-card {
+  @apply bg-secondary bg-opacity-5 backdrop-blur-2xl border border-white border-opacity-10 shadow-2xl;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  @apply border-white border-opacity-25 shadow-2xl;
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced navbar expansion */
+.nav-expand {
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.nav-expand:hover {
+  transform: scaleX(1.2);
+}
+
+/* Professional button enhancements */
+.btn-enhance {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-enhance::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s;
+}
+
+.btn-enhance:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-enhance:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Enhanced image overlays */
+.image-overlay {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, rgba(126, 191, 142, 0.1), rgba(137, 137, 222, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover::after {
+  opacity: 1;
+}
+
+/* Professional gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #8989DE, #7EBF8E, #D2886F);
+  background-size: 200% 200%;
+  animation: gradient-flow 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Enhanced animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Smooth reveal animations */
+@keyframes slide-up-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up-fade {
+  animation: slide-up-fade 0.8s ease-out forwards;
+}
+
+/* Staggered delays for multiple elements */
+.animate-slide-up-fade:nth-child(1) { animation-delay: 0.1s; }
+.animate-slide-up-fade:nth-child(2) { animation-delay: 0.2s; }
+.animate-slide-up-fade:nth-child(3) { animation-delay: 0.3s; }
+.animate-slide-up-fade:nth-child(4) { animation-delay: 0.4s; }
+.animate-slide-up-fade:nth-child(5) { animation-delay: 0.5s; }
+
+/* Background Grid Utilities */
+.bg-gradient-radial {
+  background: radial-gradient(circle at center, var(--tw-gradient-stops));
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  .glass-card {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .animate-fade-in {
+    animation-duration: 0.4s;
+  }
+  
+  .animate-scale-in {
+    animation-duration: 0.2s;
+  }
+}
+
+/* Improved mobile touch targets */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
