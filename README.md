@@ -843,15 +843,6 @@ All submissions require review. We use GitHub pull requests for this process.
 
 ---
 
-## 🙌 Testimonials
-
-> "CryptoTrade has completely transformed my trading experience. The platform is intuitive, fast, and completely free."  
-> <sub>— Sarah Chen, Professional Trader</sub>
-
-> "The advanced charting tools and real-time analytics are exceptional. Plus, zero fees means more money stays in my pocket."  
-> <sub>— Michael Rodriguez, Crypto Enthusiast</sub>
-
----
 
 ## 📞 Contact
 
