@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Fullscreen, X } from 'lucide-react';
-import TradingViewWidget from 'react-tradingview-widget';
+import { AdvancedRealTimeChart } from 'react-ts-tradingview-widgets';
 import { Button } from '@/components/ui/button';
 
 const CryptoChart = () => {
@@ -28,9 +28,9 @@ const CryptoChart = () => {
           </Button>
         </div>
         <div className="h-[400px] lg:h-[700px] w-full">
-          <TradingViewWidget
+          <AdvancedRealTimeChart
             symbol="BINANCE:BTCUSDT"
-            theme="Dark"
+            theme="dark"
             locale="en"
             autosize
             hide_side_toolbar={false}
@@ -41,6 +41,7 @@ const CryptoChart = () => {
             hide_top_toolbar={false}
             save_image={false}
             container_id="tradingview_chart"
+            copyrightStyles={{ parent: { display: 'none' } }}
           />
         </div>
       </div>
@@ -64,9 +65,9 @@ const CryptoChart = () => {
             
             {/* Full Screen Chart Container */}
             <div className="h-full w-full animate-scale-in">
-              <TradingViewWidget
+              <AdvancedRealTimeChart
                 symbol="BINANCE:BTCUSDT"
-                theme="Dark"
+                theme="dark"
                 locale="en"
                 autosize
                 hide_side_toolbar={false}
@@ -77,6 +78,7 @@ const CryptoChart = () => {
                 hide_top_toolbar={false}
                 save_image={false}
                 container_id="tradingview_chart_fullscreen"
+                copyrightStyles={{ parent: { display: 'none' } }}
               />
             </div>
           </div>
