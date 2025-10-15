@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="public/lovable-uploads/56ff28a2-1c12-4943-bedd-b9ddabe1ac78.png" alt="CryptoTrade Dashboard Preview" width="80%" />
+  <img src="public/preview1.png" alt="CryptoTrade Dashboard Preview" width="80%" />
 </p>
 
 ---
@@ -106,7 +106,7 @@
 
 | Landing Page | Dashboard |
 |--------------|-----------|
-| <img src="public/lovable-uploads/4a61e394-4d03-4785-a2bc-abf58b5f3a85.png" alt="Landing Preview" width="350"/> | <img src="public/lovable-uploads/56ff28a2-1c12-4943-bedd-b9ddabe1ac78.png" alt="Dashboard Preview" width="350"/> |
+| <img src="public/preview2.png" alt="Landing Preview" width="350"/> | <img src="public/preview1.png" alt="Dashboard Preview" width="350"/> |
 
 ---
 
@@ -855,8 +855,8 @@ All submissions require review. We use GitHub pull requests for this process.
 
 ## 📞 Contact
 
-- **Email:** support@cryptotrade.com
-- **Phone:** +1 (555) 123-4567
+- **Email:** mausamkumkar@gmail.com
+- **Phone:** +91 86238545574
 
 ---
 
