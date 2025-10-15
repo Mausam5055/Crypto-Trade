@@ -106,7 +106,7 @@
 
 | Landing Page | Dashboard |
 |--------------|-----------|
-| <img src="public/preview2.png" alt="Landing Preview" width="350"/> | <img src="public/preview1.png" alt="Dashboard Preview" width="350"/> |
+| <img src="public/preview1.png" alt="Landing Preview" width="350"/> | <img src="public/preview2.png" alt="Dashboard Preview" width="350"/> |
 
 ---
 
